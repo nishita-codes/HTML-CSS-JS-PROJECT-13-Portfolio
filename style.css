@@ -48,7 +48,7 @@ body{
 }
 
 .infocontainer{
-    background-color:  rgb(209, 204, 204);
+    /* background-color:  rgb(209, 204, 204); */
     color:black;
     height:80vh;
     width:79vw;
@@ -88,7 +88,7 @@ body{
     padding:7px 15px;
     border-radius: 20px;
     border:none;
-    background-color: white;
+    background-color: rgb(209, 204, 204);
     color:black;
     font-weight: 600;
     margin:3px;
