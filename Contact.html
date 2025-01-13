@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-  <div class="sidebar">
-   
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/intro.html">My Intro</a></li>
-            <li><a href="/services.html">Services</a></li>
-            <li><a href="/blog.html">Blog</a></li>
-            <li><a href="/contact.html">Contact Me</a></li>
-        </ul>
-    </nav>
-  </div>  
-  <div class="main">
-    <div class="infocontainer">
-    <div class="devInfo">
-       <div class="hello">My name is   </div>
-       <div class="name">Nishita Patidar</div>
-       <div class="work">and i am a Frontend Developer.</div>
-       <div class="moreabout">Passionate frontend developer skilled in creating responsive, user-friendly interfaces using HTML, CSS, JavaScript, and modern frameworks like React.</div>
-       <div class="button">
-        <button>Download CV</button>
-        <button>Contact Me</button>
-       </div>
+        <div class="sidebar">
+
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/intro.html">My Intro</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="contactform">
+                <h1>Contact me for work/general Enquiries.</h1>
+                <form>
+                    <div class="mb-3">
+                      <label for="clientEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="clientEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="clientphone" class="form-label">Phone</label>
+                      <input type="phone" class="form-control" id="clientphone">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="isClient">
+                      <label class="form-check-label" for="isClient">I want you to work on a project with me</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
+        </div>
+
+        
     </div>
-    <div class="devPic">
-      <img src="" alt="">
-    </div>
-</div>
-  </div>
-</div>
- <script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
