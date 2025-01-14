@@ -18,7 +18,7 @@ body{
 
 .sidebar{
     background-color: rgb(209, 204, 204);
-    width:15vw;
+    width:14vw;
     height:100vh;
     color:black;
     border-right: 1px solid black;
@@ -101,5 +101,90 @@ body{
 
 /* CONTACT CONTAINER */
 .contactform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:80vh;
+    width:70vw;
+    margin:70px;
+    margin-left:130px;
+    border:1px solid black;
     color:black;
+    font-family: "Fira Sans", serif;
 }
+
+.contactform h1{
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    color:rgb(51, 103, 206);
+    font-size: 40px;
+    padding-top: 60px;
+}
+
+.contactform form{
+    padding-top:20px;
+    
+}
+.contactform div{
+    padding: 6px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contactform div input{
+    width:25vw;
+    border-radius:  5px;
+    margin: 6px 0;
+    padding: 3px;
+}
+
+#emailHelp{
+    font-size: 10px;
+    color: midnightblue;
+    margin: 0 5px;
+}
+
+#form-check{
+flex-direction: row;
+}
+
+#form-check input{
+ width: 24px;
+ margin: 4px 0;
+}
+
+.btn{
+    padding:7px 15px;
+    border-radius: 20px;
+    border:none;
+    background-color: rgb(209, 204, 204);
+    color:black;
+    font-weight: 600;
+    margin:3px;
+    cursor: pointer;
+}
+.myintro{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:80vh;
+    width:70vw;
+    margin:70px;
+    margin-left:130px;
+    border:1px solid black;
+    color:black;
+    font-family: "Fira Sans", serif;
+}
+
+.myintro h1{
+   color:rgb(51, 103, 206);
+   font-size: 40px;
+   padding-top:60px;
+   text-decoration: underline;
+}
+.myintro p{
+  margin:60px 70px;
+  font-size: 20px;
+  color:rgb(65, 64, 64);
+}
+
