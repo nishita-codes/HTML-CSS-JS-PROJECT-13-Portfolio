@@ -187,4 +187,26 @@ flex-direction: row;
   font-size: 20px;
   color:rgb(65, 64, 64);
 }
+  
 
+/* SKILLS */
+.skills{
+    color:black;
+    height:80vh;
+    width:70vw;
+    margin:70px;
+    margin-left:130px;
+    border:1px solid black;
+    color:black;
+    font-family: "Fira Sans", serif;
+}
+.skills h1{
+    color:rgb(51, 103, 206);
+}
+.skills ul li{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    list-style-type: none;
+    margin:10px;
+    font-size: 20px;
+}
