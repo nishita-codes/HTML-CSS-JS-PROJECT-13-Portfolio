@@ -13,12 +13,12 @@ body{
 }
 .container{
     display: flex;
-   
+     
 }
 
 .sidebar{
     background-color: rgb(209, 204, 204);
-    width:14vw;
+    /* width:14vw; */
     height:100vh;
     color:black;
     border-right: 1px solid black;
@@ -56,6 +56,13 @@ body{
     margin-top:70px;
     display: flex;
     border:1px solid black;
+    /* background: url('personal-image.jpg') no-repeat center center/cover;
+    background-size: 300px; */
+    
+}
+.infocontainer img{
+    width:430px;
+
 }
 
 .devInfo{
@@ -259,4 +266,17 @@ flex-direction: row;
 .discription{
     color:rgb(65, 64, 64);
     font-size: 14px;
+}
+.sidebargo{
+    transform: translate(-443px , 0px);
+    position:absolute;
+}
+.hanburg{
+    position:absolute;
+    cursor: pointer;
+    top:10px;
+    left: 10px;
+}
+.cross{
+margin-left: 114px;
 }
