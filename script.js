@@ -25,10 +25,26 @@ document.addEventListener("DOMContentLoaded", () => {
             document.querySelector('.ham').style.display = 'inline';
             document.querySelector('.cross').style.display = 'none';
         } else {
-            setTimeout(()=>{
-            document.querySelector('.cross').style.display = 'inline';
-        } , 380);
+            setTimeout(() => {
+                document.querySelector('.cross').style.display = 'inline';
+            }, 380);
             document.querySelector('.ham').style.display = 'none';
         }
+    });
+
+
+
+    document.getElementById("downloadResumeBtn").addEventListener("click", function () {
+
+        const resumePath = "./assets/My Resume (1).pdf";
+
+
+        const link = document.createElement("a");
+        link.href = resumePath;
+
+        link.download = "Nishita_Patidar_Resume.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     });
 });
