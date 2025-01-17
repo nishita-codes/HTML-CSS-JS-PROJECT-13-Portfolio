@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    document.getElementById("downloadResumeBtn").addEventListener("click", function () {
+    document.getElementById("downloadResumeBtn").addEventListener("click",function() {
 
         const resumePath = "./assets/My Resume (1).pdf";
 
@@ -47,4 +47,51 @@ document.addEventListener("DOMContentLoaded", () => {
         link.click();
         document.body.removeChild(link);
     });
+
+    
+  
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+      event.preventDefault(); 
+
+      const name = document.getElementById("clientEmail1").value;
+      const email = document.getElementById("clientEmail2").value;
+      const Phone = document.getElementById("clientphone").value;
+
+      
+      if (!name || !email|| !Phone) {
+        alert("Please fill out all fields.");
+        return;
+      }
+
+
+      const formData = {
+        name: name,
+        email : email,
+        Phone: Phone,
+      };
+      console.log(formData);
+
+      // Submit data to server via fetch
+      fetch("https://your-server-endpoint.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+        .then((response) => {
+          if (response.ok) {
+            alert("Your message has been sent successfully!");
+            document.getElementById("contactForm").reset(); 
+          } else {
+            alert("There was an issue sending your message. Please try again.");
+          }
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+          alert("An error occurred. Please try again later.");
+        });
+    });
+  
+
 });
